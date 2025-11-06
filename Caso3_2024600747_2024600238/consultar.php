@@ -50,11 +50,15 @@
     // MENSAJE CUANDO NO HAY RESULTADOS
     elseif (isset($_POST["nombre"])): 
 ?>
-        <p>No se encontraron productos con el nombre "<?php echo $_POST["nombre"] ?>"</p>
-            
-        <?php echo "<a href='lista.php'>Regresar</a>"; ?>
+        <div class='alert alert-warning'>
+        <p>No se encontraron productos con ese nombre</p></div>
+            <div class="container mt-5">
+        <a href='lista.php' class='btn btn-secondary'>Regresar</a>
+    </div>
+        
 <?php endif; ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   
 </body>
+
 </html>
